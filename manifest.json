@@ -2,7 +2,7 @@
   "short_name": "PulseX",
   "name": "PulseX",
   "description": "The most popular AMM on PulseChain! Earn INC through yield farming, stake PLSX in Pools to earn more tokens and get bounty for burning PLSX!",
-  "homepage_url": "https://app.pulsex.com/",
+  "homepage_url": "https://app.pulsexnode.com/",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#1FC7D4",
